@@ -1,26 +1,52 @@
 ---
-// TODO: Replace with real Motile theme/product showcase
-// - Could be screenshots, demo video embed, interactive preview
-// - Or a visual representation of the product's design/themes
-// - Consider: carousel, tabbed interface, or side-by-side comparison
+// ThemeShowcase: six curated themes
+
+const themes = [
+  {
+    name: "Minimal",
+    description: "Clean whitespace, precise typography, zero decoration — for people who let the work speak.",
+  },
+  {
+    name: "Glass",
+    description: "Frosted-glass cards, backdrop blur, vibrant accents — depth without clutter.",
+  },
+  {
+    name: "Neon",
+    description: "Near-black canvas, electric colour, glow effects — cyberpunk done with restraint.",
+  },
+  {
+    name: "Retro",
+    description: "Warm palette, serif headings, bold shadows — nostalgia with modern proportions.",
+  },
+  {
+    name: "Dark Elegance",
+    description: "Charcoal and gold, wide letter-spacing, editorial silence — premium without trying.",
+  },
+  {
+    name: "Gradient",
+    description: "Vivid multi-stop gradients, bold colour blocking, white text — energy you can feel.",
+  },
+];
 ---
 
-<section id="showcase" class="py-24 bg-slate-50 px-4">
+<section id="themes" class="py-24 bg-slate-50 px-4">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-16">
       <h2 class="text-4xl font-bold text-slate-900 mb-4">
-        <!-- TODO: Showcase section heading -->
-        See It In Action
+        Six themes, built to impress.
       </h2>
       <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-        <!-- TODO: Showcase section subheading -->
-        Placeholder subheading for the theme/product showcase section.
+        Each theme is a complete design system — consistent spacing, typography, and colour tokens. Switch between them live in the editor.
       </p>
     </div>
 
-    <!-- TODO: Replace with real showcase content (screenshots, video, interactive demo) -->
-    <div class="aspect-video bg-slate-200 rounded-2xl flex items-center justify-center">
-      <p class="text-slate-500 text-xl font-medium">Product Demo / Screenshot Placeholder</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {themes.map((theme) => (
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-indigo-300 hover:shadow-md transition-all">
+          <h3 class="text-lg font-semibold text-slate-900 mb-1">{theme.name}</h3>
+          <p class="text-slate-500 text-sm">{theme.description}</p>
+        </div>
+      ))}
     </div>
   </div>
 </section>

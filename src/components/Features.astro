@@ -1,24 +1,26 @@
 ---
-// TODO: Replace with real Motile features
-// - 3–6 key features/benefits
-// - Each: icon, title, description
-// - Consider using an icon library (e.g. @iconify/astro or heroicons)
+// Features: key differentiators
 
 const features = [
   {
-    icon: "⚡",
-    title: "Feature One",
-    description: "TODO: Describe the first key feature or benefit of Motile.",
+    icon: "▦",
+    title: "Editor on the page",
+    description: "The visual editor lives on your page, not behind a login screen — edit live and see the result instantly.",
   },
   {
-    icon: "🎯",
-    title: "Feature Two",
-    description: "TODO: Describe the second key feature or benefit of Motile.",
+    icon: "◈",
+    title: "Motion that earns its place",
+    description: "Framer Motion + GSAP power every entrance effect, hover state, and scroll reveal — purposeful animation, not decoration.",
   },
   {
-    icon: "🔒",
-    title: "Feature Three",
-    description: "TODO: Describe the third key feature or benefit of Motile.",
+    icon: "◧",
+    title: "Six design-forward themes",
+    description: "Minimal, Glass, Neon, Retro, Dark Elegance, Gradient — fully designed systems, not generic templates.",
+  },
+  {
+    icon: "⊘",
+    title: "Own your data",
+    description: "Self-hosted and open source — zero third-party tracking, no vendor lock-in, deploy to your own server in minutes.",
   },
 ];
 ---
@@ -27,19 +29,17 @@ const features = [
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-16">
       <h2 class="text-4xl font-bold text-slate-900 mb-4">
-        <!-- TODO: Features section heading -->
-        Why Motile?
+        Built different. By design.
       </h2>
       <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-        <!-- TODO: Features section subheading -->
-        Placeholder subheading for the features section.
+        Motile is what happens when craft meets conviction — every feature exists because it should, not because the competition has it.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       {features.map((feature) => (
         <div class="p-8 rounded-2xl border border-slate-100 hover:border-indigo-200 hover:shadow-lg transition-all">
-          <div class="text-4xl mb-4">{feature.icon}</div>
+          <div class="text-4xl mb-4 font-mono text-indigo-500">{feature.icon}</div>
           <h3 class="text-xl font-semibold text-slate-900 mb-2">{feature.title}</h3>
           <p class="text-slate-600">{feature.description}</p>
         </div>
