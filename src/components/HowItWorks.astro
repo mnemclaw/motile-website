@@ -1,0 +1,53 @@
+---
+// TODO: Replace with real Motile onboarding / usage steps
+// - 3–5 numbered steps showing how to get started or how the product works
+// - Each: step number, title, description
+// - Optional: icon or illustration per step
+
+const steps = [
+  {
+    number: "01",
+    title: "Step One",
+    description: "TODO: Describe the first step in using or getting started with Motile.",
+  },
+  {
+    number: "02",
+    title: "Step Two",
+    description: "TODO: Describe the second step in the Motile workflow.",
+  },
+  {
+    number: "03",
+    title: "Step Three",
+    description: "TODO: Describe the third step — the outcome or result the user achieves.",
+  },
+];
+---
+
+<section id="how-it-works" class="py-24 bg-white px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-slate-900 mb-4">
+        <!-- TODO: How It Works section heading -->
+        How It Works
+      </h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        <!-- TODO: How It Works section subheading -->
+        Placeholder subheading. Explain the simple path to value.
+      </p>
+    </div>
+
+    <div class="space-y-12">
+      {steps.map((step) => (
+        <div class="flex gap-8 items-start">
+          <div class="text-5xl font-bold text-indigo-100 min-w-[5rem] text-right select-none">
+            {step.number}
+          </div>
+          <div class="pt-2">
+            <h3 class="text-2xl font-semibold text-slate-900 mb-2">{step.title}</h3>
+            <p class="text-slate-600 text-lg">{step.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

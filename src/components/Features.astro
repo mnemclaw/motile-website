@@ -1,0 +1,49 @@
+---
+// TODO: Replace with real Motile features
+// - 3–6 key features/benefits
+// - Each: icon, title, description
+// - Consider using an icon library (e.g. @iconify/astro or heroicons)
+
+const features = [
+  {
+    icon: "⚡",
+    title: "Feature One",
+    description: "TODO: Describe the first key feature or benefit of Motile.",
+  },
+  {
+    icon: "🎯",
+    title: "Feature Two",
+    description: "TODO: Describe the second key feature or benefit of Motile.",
+  },
+  {
+    icon: "🔒",
+    title: "Feature Three",
+    description: "TODO: Describe the third key feature or benefit of Motile.",
+  },
+];
+---
+
+<section id="features" class="py-24 bg-white px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-slate-900 mb-4">
+        <!-- TODO: Features section heading -->
+        Why Motile?
+      </h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        <!-- TODO: Features section subheading -->
+        Placeholder subheading for the features section.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      {features.map((feature) => (
+        <div class="p-8 rounded-2xl border border-slate-100 hover:border-indigo-200 hover:shadow-lg transition-all">
+          <div class="text-4xl mb-4">{feature.icon}</div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">{feature.title}</h3>
+          <p class="text-slate-600">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
